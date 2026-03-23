@@ -1,409 +1,162 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Onigiri en Argentina — Historia, cultura y dónde comerlos</title>
-<meta name="description" content="Todo sobre el onigiri en Argentina. Qué es, cómo se come, su historia milenaria y dónde encontrar los mejores en Buenos Aires."/>
-<meta property="og:title" content="Onigiri Argentina — La guía definitiva"/>
-<meta property="og:description" content="El onigiri tiene 1.000 años de historia. En Argentina, recién está llegando. Acá contamos todo."/>
+<title>Onigiri en Argentina · Historia, cultura y dónde comerlos en Buenos Aires</title>
+<meta name="description" content="Qué es un onigiri, su historia de más de 2.000 años y dónde encontrar los mejores en Buenos Aires. La guía definitiva del onigiri en Argentina."/>
+<meta name="keywords" content="onigiri argentina, onigiri buenos aires, donde comer onigiri, onigiri delivery, comida japonesa buenos aires, onigiri palermo, mejor onigiri"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://onigiri.com.ar"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Onigiri en Argentina · La guía definitiva"/>
+<meta property="og:description" content="2.000 años de historia en un triángulo de arroz. Qué es el onigiri y dónde comer los mejores en Buenos Aires."/>
 <meta property="og:url" content="https://onigiri.com.ar"/>
+<meta property="og:locale" content="es_AR"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Onigiri en Argentina: historia, cultura y dónde comerlos en Buenos Aires",
+  "description": "Guía completa sobre el onigiri en Argentina. Historia milenaria, cultura japonesa y el mejor lugar para comer onigiri en Buenos Aires.",
+  "url": "https://onigiri.com.ar",
+  "inLanguage": "es-AR",
+  "about": {"@type": "Thing", "name": "Onigiri"},
+  "mentions": {
+    "@type": "Restaurant",
+    "name": "Jurichi Onigiris",
+    "url": "https://jurichi.com",
+    "servesCuisine": "Japanese",
+    "address": {"@type": "PostalAddress", "streetAddress": "Bonpland 1861", "addressLocality": "Buenos Aires", "addressCountry": "AR"}
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --black: #0A0A0A;
-    --white: #F5F0E6;
-    --red: #C0392B;
-    --gray: #888880;
-    --border: rgba(245,240,230,0.12);
+    --cream: #F2EDE4;
+    --cream-dark: #E8E0D4;
+    --cream-darker: #DDD4C4;
+    --ink: #1C1814;
+    --ink-light: #3D3630;
+    --ink-muted: #7A6F64;
+    --red: #B5341E;
+    --border: rgba(28,24,20,0.1);
+    --border-strong: rgba(28,24,20,0.18);
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
-  body {
-    background: var(--black);
-    color: var(--white);
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.7;
-    overflow-x: hidden;
+  body { background: var(--cream); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.7; overflow-x: hidden; }
+  body::after {
+    content: ''; position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.025; pointer-events: none; z-index: 999;
   }
-
-  /* ── GRAIN OVERLAY ── */
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
-    opacity: 0.03;
-    pointer-events: none;
-    z-index: 1000;
-  }
-
-  /* ── NAV ── */
   nav {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 100;
-    padding: 1.25rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 0.5px solid var(--border);
-    backdrop-filter: blur(12px);
-    background: rgba(10,10,10,0.7);
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.1rem 2.5rem; display: flex; justify-content: space-between; align-items: center;
+    background: rgba(242,237,228,0.9); backdrop-filter: blur(16px); border-bottom: 0.5px solid var(--border);
   }
-  .nav-logo {
-    font-family: 'DM Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.2em;
-    color: var(--white);
-    opacity: 0.6;
-    text-decoration: none;
-  }
-  .nav-links { display: flex; gap: 2rem; }
-  .nav-links a {
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    color: var(--white);
-    opacity: 0.45;
-    text-decoration: none;
-    transition: opacity 0.2s;
-  }
-  .nav-links a:hover { opacity: 1; }
+  .nav-logo { font-family: 'DM Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--ink-muted); text-decoration: none; }
+  .nav-links { display: flex; gap: 2.5rem; }
+  .nav-links a { font-size: 12px; color: var(--ink-muted); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--ink); }
 
-  /* ── HERO ── */
+  /* HERO */
   .hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 2rem 4rem;
-    position: relative;
-    overflow: hidden;
+    min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr;
+    align-items: end; padding: 8rem 2.5rem 5rem; gap: 4rem; position: relative; overflow: hidden;
   }
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    background: 
-      radial-gradient(ellipse 60% 40% at 80% 20%, rgba(192,57,43,0.08) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 60% at 10% 80%, rgba(192,57,43,0.04) 0%, transparent 60%);
+  .hero-kanji-bg {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    font-size: clamp(260px, 38vw, 520px); line-height: 1;
+    color: rgba(28,24,20,0.04); font-family: 'Cormorant Garamond', serif;
+    user-select: none; pointer-events: none; white-space: nowrap;
   }
-  .hero-kanji {
-    position: absolute;
-    top: 50%;
-    right: -2rem;
-    transform: translateY(-50%);
-    font-size: clamp(200px, 30vw, 420px);
-    line-height: 1;
-    color: rgba(245,240,230,0.03);
-    font-family: 'Playfair Display', serif;
-    letter-spacing: -0.05em;
-    user-select: none;
-    pointer-events: none;
-  }
-  .hero-eyebrow {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.25em;
-    color: var(--red);
-    margin-bottom: 1.5rem;
-    opacity: 0;
-    animation: fadeUp 0.8s ease 0.2s forwards;
-  }
-  .hero-title {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(52px, 9vw, 130px);
-    font-weight: 900;
-    line-height: 0.92;
-    letter-spacing: -0.03em;
-    max-width: 900px;
-    opacity: 0;
-    animation: fadeUp 0.8s ease 0.4s forwards;
-  }
-  .hero-title em {
-    font-style: italic;
-    color: var(--red);
-  }
-  .hero-sub {
-    margin-top: 2rem;
-    font-size: clamp(15px, 1.8vw, 18px);
-    color: var(--white);
-    opacity: 0;
-    max-width: 560px;
-    line-height: 1.6;
-    animation: fadeUp 0.8s ease 0.6s forwards;
-  }
-  .hero-sub span { opacity: 0.5; }
-  .hero-scroll {
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    opacity: 0;
-    animation: fadeUp 0.8s ease 0.8s forwards;
-  }
-  .hero-scroll-line {
-    width: 40px;
-    height: 0.5px;
-    background: var(--white);
-    opacity: 0.3;
-  }
-  .hero-scroll span {
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    opacity: 0.3;
-    font-family: 'DM Mono', monospace;
-  }
+  .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.3em; color: var(--red); margin-bottom: 1.25rem; opacity: 0; animation: fadeUp 0.8s ease 0.2s forwards; }
+  h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(56px, 7vw, 108px); font-weight: 700; line-height: 0.9; letter-spacing: -0.02em; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.8s ease 0.35s forwards; }
+  h1 em { font-style: italic; color: var(--red); }
+  .hero-sub { font-size: 16px; color: var(--ink-muted); max-width: 380px; line-height: 1.7; opacity: 0; animation: fadeUp 0.8s ease 0.5s forwards; }
+  .hero-meta { opacity: 0; animation: fadeUp 0.8s ease 0.65s forwards; }
+  .hero-meta-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--ink-muted); opacity: 0.6; margin-bottom: 1.5rem; }
+  .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; border-top: 0.5px solid var(--border-strong); padding-top: 1.5rem; }
+  .hero-stat-n { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 600; line-height: 1; color: var(--ink); margin-bottom: 4px; }
+  .hero-stat-n em { color: var(--red); font-style: normal; }
+  .hero-stat-l { font-size: 11px; color: var(--ink-muted); line-height: 1.4; }
 
-  /* ── SECTIONS ── */
-  section {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 6rem 2rem;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  section.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .section-label {
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.25em;
-    color: var(--red);
-    margin-bottom: 2rem;
-    display: block;
-  }
-  h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(32px, 5vw, 52px);
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin-bottom: 2rem;
-  }
+  /* CONTAINERS */
+  .container { max-width: 800px; margin: 0 auto; padding: 6rem 2.5rem; opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .container.visible { opacity: 1; transform: translateY(0); }
+  .divider { max-width: 800px; margin: 0 auto; height: 0.5px; background: var(--border-strong); }
+
+  /* TYPOGRAPHY */
+  .section-label { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.3em; color: var(--red); display: block; margin-bottom: 2rem; }
+  h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 5vw, 56px); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 2rem; }
   h2 em { font-style: italic; color: var(--red); }
-  p {
-    font-size: 17px;
-    line-height: 1.8;
-    color: rgba(245,240,230,0.75);
-    margin-bottom: 1.25rem;
-  }
-  p strong { color: var(--white); font-weight: 500; }
+  h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; margin-bottom: 0.75rem; }
+  p { font-size: 17px; line-height: 1.85; color: var(--ink-light); margin-bottom: 1.25rem; }
+  p strong { color: var(--ink); font-weight: 500; }
 
-  /* ── DIVIDER ── */
-  .divider {
-    width: 100%;
-    height: 0.5px;
-    background: var(--border);
-    max-width: 780px;
-    margin: 0 auto;
-  }
+  .pullquote { border-left: 2px solid var(--red); padding: 1rem 0 1rem 2rem; margin: 2.5rem 0; }
+  .pullquote p { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 3vw, 30px); font-style: italic; color: var(--ink); line-height: 1.4; margin: 0; }
 
-  /* ── PULL QUOTE ── */
-  .pullquote {
-    border-left: 2px solid var(--red);
-    padding: 1.5rem 0 1.5rem 2rem;
-    margin: 3rem 0;
-  }
-  .pullquote p {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(20px, 3vw, 26px);
-    font-style: italic;
-    color: var(--white);
-    opacity: 0.9;
-    line-height: 1.4;
-    margin: 0;
-  }
+  .timeline { margin: 2.5rem 0; }
+  .timeline-item { display: grid; grid-template-columns: 90px 1fr; gap: 1.5rem; padding: 1.25rem 0; border-top: 0.5px solid var(--border); }
+  .timeline-year { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--red); padding-top: 3px; letter-spacing: 0.05em; }
+  .timeline-text { font-size: 15px; color: var(--ink-muted); line-height: 1.65; margin: 0; }
+  .timeline-text strong { color: var(--ink); font-weight: 500; }
 
-  /* ── TIMELINE ── */
-  .timeline { margin: 3rem 0; }
-  .timeline-item {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 1.5rem;
-    padding: 1.5rem 0;
-    border-top: 0.5px solid var(--border);
-  }
-  .timeline-year {
-    font-family: 'DM Mono', monospace;
-    font-size: 13px;
-    color: var(--red);
-    padding-top: 3px;
-    letter-spacing: 0.05em;
-  }
-  .timeline-text {
-    font-size: 15px;
-    color: rgba(245,240,230,0.65);
-    line-height: 1.6;
-    margin: 0;
-  }
-  .timeline-text strong { color: var(--white); }
+  .feature-box { background: var(--cream-dark); border: 0.5px solid var(--border-strong); padding: 2rem 2.5rem; margin: 2.5rem 0; }
+  .feature-box h3 { font-size: 20px; margin-bottom: 0.75rem; }
+  .feature-box p { font-size: 16px; margin: 0; }
 
-  /* ── FEATURE BOX ── */
-  .feature-box {
-    background: rgba(245,240,230,0.03);
-    border: 0.5px solid var(--border);
-    border-radius: 2px;
-    padding: 2.5rem;
-    margin: 3rem 0;
+  /* NOTA PERIODÍSTICA */
+  .nota-section {
+    background: var(--cream-darker); border-top: 0.5px solid var(--border-strong); border-bottom: 0.5px solid var(--border-strong);
+    padding: 6rem 2.5rem; opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease;
   }
-  .feature-box-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--white);
-  }
+  .nota-section.visible { opacity: 1; transform: translateY(0); }
+  .nota-inner { max-width: 800px; margin: 0 auto; }
+  .nota-kicker { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.3em; color: var(--red); margin-bottom: 1rem; display: block; }
+  .nota-headline { font-family: 'Cormorant Garamond', serif; font-size: clamp(34px, 5vw, 54px); font-weight: 700; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 1.5rem; }
+  .nota-headline em { font-style: italic; color: var(--red); }
+  .nota-byline { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--ink-muted); letter-spacing: 0.1em; padding-bottom: 1.5rem; border-bottom: 0.5px solid var(--border-strong); margin-bottom: 2rem; }
+  .nota-body p { font-size: 17px; line-height: 1.85; color: var(--ink-light); margin-bottom: 1.25rem; }
+  .nota-body p strong { color: var(--ink); font-weight: 500; }
 
-  /* ── JURICHI SECTION ── */
-  .jurichi-section {
-    max-width: 100%;
-    background: rgba(192,57,43,0.06);
-    border-top: 0.5px solid rgba(192,57,43,0.2);
-    border-bottom: 0.5px solid rgba(192,57,43,0.2);
-    padding: 6rem 2rem;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .jurichi-section.visible { opacity: 1; transform: translateY(0); }
-  .jurichi-inner { max-width: 780px; margin: 0 auto; }
-  .jurichi-tag {
-    display: inline-block;
-    font-family: 'DM Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    color: var(--red);
-    border: 0.5px solid rgba(192,57,43,0.4);
-    padding: 4px 10px;
-    border-radius: 2px;
-    margin-bottom: 2rem;
-  }
-  .jurichi-name {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(42px, 7vw, 88px);
-    font-weight: 900;
-    line-height: 0.9;
-    letter-spacing: -0.03em;
-    margin-bottom: 2rem;
-  }
-  .jurichi-name span { color: var(--red); }
-  .jurichi-details {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin: 2.5rem 0;
-  }
-  .jurichi-detail {
-    border-top: 0.5px solid var(--border);
-    padding-top: 1rem;
-  }
-  .jurichi-detail-label {
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    font-family: 'DM Mono', monospace;
-    color: var(--gray);
-    margin-bottom: 0.4rem;
-  }
-  .jurichi-detail-value {
-    font-size: 15px;
-    color: var(--white);
-    font-weight: 400;
-  }
-  .jurichi-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 2rem;
-    padding: 14px 28px;
-    background: var(--red);
-    color: var(--white);
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    transition: background 0.2s, transform 0.2s;
-    border-radius: 2px;
-  }
-  .jurichi-cta:hover { background: #a93226; transform: translateY(-1px); }
-  .jurichi-cta-arrow { font-size: 16px; }
+  .nota-details { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border-strong); border: 0.5px solid var(--border-strong); margin: 2.5rem 0; }
+  .nota-detail { background: var(--cream-darker); padding: 1.25rem 1.5rem; }
+  .nota-detail-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; color: var(--ink-muted); margin-bottom: 0.4rem; }
+  .nota-detail-value { font-size: 14px; color: var(--ink); line-height: 1.4; }
 
-  /* ── SABORES ── */
-  .sabores {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--border);
-    margin: 2.5rem 0;
-    border: 0.5px solid var(--border);
-  }
-  .sabor {
-    background: var(--black);
-    padding: 1.5rem;
-    transition: background 0.2s;
-  }
-  .sabor:hover { background: rgba(192,57,43,0.05); }
-  .sabor-name {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    color: var(--white);
-    margin-bottom: 0.4rem;
-  }
-  .sabor-desc {
-    font-size: 13px;
-    color: rgba(245,240,230,0.45);
-    line-height: 1.5;
-    margin: 0;
-  }
+  .sabores-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border-strong); border: 0.5px solid var(--border-strong); margin: 2rem 0; }
+  .sabor { background: var(--cream-darker); padding: 1.25rem 1.5rem; transition: background 0.2s; }
+  .sabor:hover { background: var(--cream); }
+  .sabor-name { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: var(--ink); margin-bottom: 0.35rem; }
+  .sabor-desc { font-size: 13px; color: var(--ink-muted); margin: 0; line-height: 1.5; }
 
-  /* ── FOOTER ── */
-  footer {
-    padding: 3rem 2rem;
-    border-top: 0.5px solid var(--border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  .footer-text {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: rgba(245,240,230,0.2);
-    letter-spacing: 0.1em;
-  }
-  .footer-link {
-    font-family: 'DM Mono', monospace;
-    font-size: 11px;
-    color: rgba(245,240,230,0.25);
-    text-decoration: none;
-    letter-spacing: 0.1em;
-    transition: color 0.2s;
-  }
-  .footer-link:hover { color: var(--white); }
+  .nota-cta { display: inline-flex; align-items: center; gap: 10px; padding: 13px 26px; background: var(--ink); color: var(--cream); text-decoration: none; font-size: 12px; letter-spacing: 0.12em; font-weight: 500; transition: background 0.2s, transform 0.15s; margin-top: 1rem; }
+  .nota-cta:hover { background: var(--red); transform: translateY(-1px); }
 
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  footer { padding: 2.5rem; border-top: 0.5px solid var(--border-strong); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; background: var(--cream-dark); }
+  .footer-text { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--ink-muted); letter-spacing: 0.12em; opacity: 0.6; }
+  .footer-link { font-family: 'DM Mono', monospace; font-size: 10px; color: var(--ink-muted); text-decoration: none; letter-spacing: 0.12em; transition: color 0.2s; }
+  .footer-link:hover { color: var(--red); }
 
-  /* ── MOBILE ── */
-  @media (max-width: 600px) {
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 768px) {
     nav { padding: 1rem 1.25rem; }
     .nav-links { display: none; }
-    .hero { padding: 0 1.25rem 3rem; }
-    section { padding: 4rem 1.25rem; }
-    .jurichi-details { grid-template-columns: 1fr; }
-    .sabores { grid-template-columns: 1fr; }
-    footer { flex-direction: column; align-items: flex-start; }
+    .hero { grid-template-columns: 1fr; padding: 7rem 1.25rem 4rem; gap: 3rem; min-height: auto; }
+    .container { padding: 4rem 1.25rem; }
+    .nota-section { padding: 4rem 1.25rem; }
+    .nota-details { grid-template-columns: repeat(2, 1fr); }
+    .sabores-grid { grid-template-columns: 1fr; }
+    footer { padding: 2rem 1.25rem; flex-direction: column; align-items: flex-start; }
   }
 </style>
 </head>
@@ -420,167 +173,93 @@
 </nav>
 
 <div class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-kanji">おにぎり</div>
-  <div class="hero-eyebrow">ONIGIRI · おにぎり · ARGENTINA</div>
-  <h1 class="hero-title">El snack que<br/>tiene <em>mil años</em><br/>de historia.</h1>
-  <p class="hero-sub">
-    Una bola de arroz, una hoja de nori, un relleno que cambia todo.
-    <span>La comida de viaje más antigua de Japón llegó a Buenos Aires.</span>
-  </p>
-  <div class="hero-scroll">
-    <div class="hero-scroll-line"></div>
-    <span>SCROLL PARA LEER</span>
+  <div class="hero-kanji-bg">おにぎり</div>
+  <div class="hero-left" style="position:relative;z-index:2;">
+    <div class="hero-eyebrow">ONIGIRI · おにぎり · ARGENTINA</div>
+    <h1>Dos mil<br/>años en un<br/><em>triángulo.</em></h1>
+    <p class="hero-sub">La comida portátil más antigua de Japón. Un triángulo de arroz que cruzó océanos y llegó a Buenos Aires.</p>
+  </div>
+  <div class="hero-right">
+    <div class="hero-meta">
+      <p class="hero-meta-label">EL ONIGIRI EN NÚMEROS</p>
+      <div class="hero-stats">
+        <div><div class="hero-stat-n">2<em>K</em></div><div class="hero-stat-l">años de historia documentada</div></div>
+        <div><div class="hero-stat-n">2<em>M</em></div><div class="hero-stat-l">vendidos por día solo en 7-Eleven Japón</div></div>
+        <div><div class="hero-stat-n">60<em>+</em></div><div class="hero-stat-l">rellenos distintos en los konbinis modernos</div></div>
+        <div><div class="hero-stat-n">1</div><div class="hero-stat-l">lugar en Buenos Aires que lo hace bien</div></div>
+      </div>
+    </div>
   </div>
 </div>
 
-<!-- HISTORIA -->
-<section id="historia">
+<div class="container" id="historia">
   <span class="section-label">001 — HISTORIA</span>
   <h2>Antes del sushi,<br/>estaba el <em>onigiri.</em></h2>
-  <p>
-    El onigiri no es una moda. Tiene <strong>más de 1.000 años de historia documentada</strong> y fue la comida que llevaban los samurái al campo de batalla. Antes de que existieran los palillos, antes del sushi, antes de cualquier cosa que el mundo occidental asocia con la cocina japonesa — estaba el onigiri.
-  </p>
-  <p>
-    La primera referencia escrita data del siglo XI, en el Diario de Murasaki Shikibu. Pero los arqueólogos encontraron evidencia de bolas de arroz carbonizadas en el sitio de Sannai-Maruyama que datan de hace <strong>más de 2.000 años</strong>.
-  </p>
-
-  <div class="pullquote">
-    <p>"El onigiri es la comida más democrática de Japón. Lo come el oficinista, el estudiante, el turista y el chef con estrella Michelin."</p>
-  </div>
-
+  <p>El onigiri no es una moda ni una tendencia gastronómica importada. Tiene <strong>más de 2.000 años de historia documentada</strong>. Los arqueólogos encontraron restos de arroz carbonizado con forma triangular en el sitio de Sugitani Chanobatake, en la prefectura de Ishikawa, correspondientes al período Yayoi tardío (entre el 300 AC y el 250 DC).</p>
+  <p>Antes de que existieran los palillos. Antes del sushi. Antes de cualquier cosa que el mundo occidental asocia con la cocina japonesa — el onigiri ya existía. Y ya era exactamente lo que es hoy: arroz moldeado a mano, portátil, eficiente, sin pretensiones.</p>
+  <div class="pullquote"><p>"El onigiri es la comida más democrática de Japón. Lo come el oficinista, el estudiante, el turista y el chef con estrella Michelin."</p></div>
   <div class="timeline">
-    <div class="timeline-item">
-      <span class="timeline-year">~1000 AC</span>
-      <p class="timeline-text">Primeras evidencias arqueológicas de bolas de arroz en el sitio de Sannai-Maruyama, en la prefectura de Aomori.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-year">1021</span>
-      <p class="timeline-text">Primera referencia escrita en el <strong>Diario de Murasaki Shikibu</strong>. Se describe como "tonjiki" — bolas de arroz consumidas en eventos de la corte imperial.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-year">Siglo XVI</span>
-      <p class="timeline-text">Los samurái los llevaban como ración de campo. Compactos, portátiles, energéticos. El onigiri es la primera "comida para llevar" de la historia.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-year">1974</span>
-      <p class="timeline-text">7-Eleven Japan vende el primer onigiri envuelto industrialmente. Nace el packaging con el nori separado para mantenerlo crocante. Hoy se venden <strong>más de 2 millones por día</strong> solo en esa cadena.</p>
-    </div>
-    <div class="timeline-item">
-      <span class="timeline-year">2020s</span>
-      <p class="timeline-text">El onigiri empieza a aparecer en ciudades del mundo fuera de Asia. Nueva York, Londres, París, Ciudad de México. Y Buenos Aires.</p>
-    </div>
+    <div class="timeline-item"><span class="timeline-year">~300 AC</span><p class="timeline-text">Restos de arroz carbonizado con forma triangular en el sitio arqueológico de Sugitani Chanobatake, Ishikawa. <strong>La evidencia más antigua del onigiri.</strong></p></div>
+    <div class="timeline-item"><span class="timeline-year">Siglo XI</span><p class="timeline-text">Primera referencia escrita. El <strong>Diario de Murasaki Shikibu</strong> describe el "tonjiki" — bolas de arroz glutinoso que la nobleza del período Heian entregaba a sus sirvientes.</p></div>
+    <div class="timeline-item"><span class="timeline-year">Siglos XIII–XVI</span><p class="timeline-text">Los samurái los adoptan como ración de campo. Compactos, energéticos, sin utensilios. El onigiri es la primera <strong>"comida para llevar"</strong> de la historia militar japonesa.</p></div>
+    <div class="timeline-item"><span class="timeline-year">Período Edo</span><p class="timeline-text">El cultivo del nori en la Bahía de Tokio introduce el envoltorio de alga. Nace la forma que hoy reconocemos. <strong>El onigiri se democratiza</strong> y llega a toda la población.</p></div>
+    <div class="timeline-item"><span class="timeline-year">1974</span><p class="timeline-text">7-Eleven Japan vende el primer onigiri con packaging industrial. Nace el envoltorio con nori separado para que quede crocante. <strong>Más de 2 millones por día</strong> solo en esa cadena.</p></div>
+    <div class="timeline-item"><span class="timeline-year">Hoy</span><p class="timeline-text">El onigiri aparece en ciudades fuera de Asia: Nueva York, Londres, París, Ciudad de México. Y Buenos Aires, donde <strong>recién está llegando en serio.</strong></p></div>
   </div>
-</section>
+</div>
 
 <div class="divider"></div>
 
-<!-- CULTURA -->
-<section id="cultura">
+<div class="container" id="cultura">
   <span class="section-label">002 — CULTURA</span>
   <h2>No es sushi.<br/><em>Es otra cosa.</em></h2>
-  <p>
-    El error más común del occidental que se acerca a la cocina japonesa es pensar que el onigiri es "sushi en forma de triángulo". No. Son productos completamente distintos con lógicas completamente distintas.
-  </p>
-  <p>
-    El sushi nació como técnica de conservación de pescado. El onigiri nació como comida portátil. El sushi se come en restaurantes con protocolo. El onigiri se come parado en un konbini a las 7 de la mañana antes de tomar el metro.
-  </p>
-
+  <p>El error más común del occidental que se acerca a la cocina japonesa es confundir el onigiri con el sushi. Son productos completamente distintos con lógicas completamente distintas.</p>
+  <p>El sushi nació como técnica de conservación de pescado. Se come en restaurantes, con protocolo, como experiencia. El onigiri nació como comida portátil de campo. Se come parado en un konbini a las 7 de la mañana antes de tomar el metro. No tienen ninguna relación más allá del arroz.</p>
   <div class="feature-box">
-    <p class="feature-box-title">¿Qué tiene adentro un onigiri?</p>
-    <p>Arroz de sushi cocido y condimentado, moldeado en forma triangular y envuelto con nori. El relleno va en el centro — y es donde cada maker imprime su identidad. Los clásicos japoneses son umeboshi (ciruela encurtida), atún con mayonesa y salmón. Pero la versión moderna admite casi cualquier cosa siempre que tenga sentido de sabor.</p>
+    <h3>¿Qué tiene adentro un onigiri?</h3>
+    <p>Arroz de sushi cocido y condimentado, moldeado en triángulo y envuelto con nori. El relleno va en el centro. Los clásicos japoneses: umeboshi (ciruela encurtida), atún con mayonesa y salmón. La versión moderna admite casi cualquier cosa, siempre que tenga coherencia de sabor. El 99% de los onigiris malos del mundo fracasan en el arroz — no en el relleno.</p>
   </div>
-
-  <p>
-    En Japón, el onigiri es cultura pop. Aparece en animes, en películas, en videojuegos. <strong>Es el símbolo de la comida casera, del viaje, del cuidado.</strong> Cuando una madre le prepara un onigiri a su hijo en un manga, es el equivalente japonés de "te quiero".
-  </p>
-  <p>
-    Esa carga cultural es la que hace que, cuando el onigiri llega bien hecho a una ciudad nueva, genere algo que va más allá del gusto. Genera pertenencia.
-  </p>
-</section>
+  <p>En Japón el onigiri es cultura pop. Aparece en animes, películas y videojuegos. <strong>Es el símbolo universal de la comida casera, del viaje, del cuidado.</strong> Cuando una madre le prepara un onigiri a su hijo en un manga, es el equivalente japonés de "te quiero". Esa carga cultural es lo que hace que, cuando el onigiri llega bien hecho a una ciudad nueva, genere algo que va más allá del gusto.</p>
+  <p>Genera pertenencia.</p>
+</div>
 
 <div class="divider"></div>
 
-<!-- ARGENTINA -->
-<section id="argentina">
+<div class="container" id="argentina">
   <span class="section-label">003 — EN ARGENTINA</span>
   <h2>Buenos Aires<br/>lo está <em>descubriendo.</em></h2>
-  <p>
-    Argentina tiene una relación larga con la cultura japonesa. La colectividad japonesa en Buenos Aires tiene más de 100 años de historia. Pero el onigiri como producto masivo, como snack cotidiano, como alternativa real al sándwich — eso es nuevo.
-  </p>
-  <p>
-    La razón es simple: <strong>hacer un buen onigiri es difícil.</strong> El arroz tiene que tener la textura exacta — ni demasiado seco ni demasiado húmedo. La proporción de vinagre y azúcar en el aderezo tiene que ser precisa. El nori tiene que ser crocante en el momento de comerlo. Y el relleno tiene que estar frío en el centro para que el arroz no se caliente.
-  </p>
+  <p>Argentina tiene una relación larga con la cultura japonesa. La colectividad japonesa en Buenos Aires tiene más de 100 años de historia. Pero el onigiri como producto cotidiano, como alternativa real al sándwich — eso es nuevo.</p>
+  <p>La razón es técnica: <strong>hacer un buen onigiri es difícil.</strong> El arroz tiene que tener la textura exacta — ni seco ni húmedo. La proporción de vinagre y azúcar tiene que ser precisa. El nori tiene que estar crocante en el momento de comerlo. El relleno, frío en el centro.</p>
+  <div class="pullquote"><p>"En Buenos Aires, el onigiri estuvo mal hecho durante mucho tiempo. Arroz seco de heladera, nori blando, sin carácter. Eso está cambiando."</p></div>
+  <p>La escena gastronómica japonesa en Buenos Aires creció mucho en la última década. El ramen dejó de ser nicho. El izakaya encontró su lugar. Pero el onigiri llegó tarde y con poco respeto por el producto. Servido frío, sin atención al arroz, sin entender que el nori tiene que ser el último en entrar en contacto con la humedad.</p>
+  <p>Hay un lugar en Buenos Aires que lo entendió.</p>
+</div>
 
-  <div class="pullquote">
-    <p>"El 99% de los onigiris malos del mundo fracasan en el arroz. No en el relleno."</p>
-  </div>
-
-  <p>
-    En Buenos Aires, la escena gastronómica japonesa creció mucho en la última década. El ramen dejó de ser nicho. El izakaya tiene sus locales. Pero el onigiri llegó tarde y llegó mal durante mucho tiempo — servido frío de heladera, con arroz seco, sin nori crocante.
-  </p>
-  <p>
-    Eso está cambiando.
-  </p>
-</section>
-
-<div class="divider"></div>
-
-<!-- JURICHI -->
-<div class="jurichi-section" id="donde">
-  <div class="jurichi-inner">
-    <span class="section-label">004 — DÓNDE COMER</span>
-    <span class="jurichi-tag">RECOMENDADO</span>
-    <div class="jurichi-name">JURI<span>CHI</span></div>
-    <p style="color: rgba(245,240,230,0.8); font-size: 17px; max-width: 580px; margin-bottom: 0;">
-      El lugar que cambió la conversación sobre el onigiri en Buenos Aires. Arroz de sushi trabajado con precisión, nori importado que se mantiene crocante, rellenos que tienen sentido — y una obsesión con el producto que se nota en cada pedido.
-    </p>
-
-    <div class="jurichi-details">
-      <div class="jurichi-detail">
-        <p class="jurichi-detail-label">DIRECCIÓN</p>
-        <p class="jurichi-detail-value">Bonpland 1861, Palermo Hollywood</p>
-      </div>
-      <div class="jurichi-detail">
-        <p class="jurichi-detail-label">DELIVERY</p>
-        <p class="jurichi-detail-value">Rappi · PedidosYa · Web</p>
-      </div>
-      <div class="jurichi-detail">
-        <p class="jurichi-detail-label">CALIFICACIÓN</p>
-        <p class="jurichi-detail-value">5.0 en PedidosYa · 4.9 en Rappi</p>
-      </div>
-      <div class="jurichi-detail">
-        <p class="jurichi-detail-label">HORARIO</p>
-        <p class="jurichi-detail-value">Lun–Jue y Dom 11–23hs</p>
-      </div>
+<div class="nota-section" id="donde">
+  <div class="nota-inner">
+    <span class="nota-kicker">004 — DÓNDE COMER · PALERMO HOLLYWOOD</span>
+    <h2 class="nota-headline">El lugar que cambió<br/>la conversación sobre<br/>el <em>onigiri</em> en BA.</h2>
+    <div class="nota-byline">ONIGIRI.COM.AR · Buenos Aires · 2026</div>
+    <div class="nota-body">
+      <p>Hay locales que aparecen sin hacer ruido y terminan definiendo cómo una ciudad entiende un producto. Eso es lo que pasó con <strong>Jurichi</strong>, el local de onigiris de Palermo Hollywood que hoy tiene una de las calificaciones más altas del rubro en las plataformas de delivery porteñas: <strong>5.0 en PedidosYa con más de 300 opiniones, 4.9 en Rappi</strong>. Sin publicidad paga.</p>
+      <p>Lo primero que llama la atención cuando uno prueba un onigiri de Jurichi es el arroz. No el relleno — aunque los rellenos son buenos. Es el arroz. La textura es exacta: compacto pero no apelmazado, condimentado pero no invasivo. Se nota que alguien pasó tiempo entendiendo qué hace que un onigiri sea un onigiri y no simplemente "arroz con algo adentro".</p>
+      <p>El catálogo rota, pero los pilares están siempre: el <strong>Asian Salmon Sesame</strong>, que combina salmón y sésamo tostado en el relleno más pedido del local; el <strong>Spicy Tuna Japo Mayo</strong>, para los que quieren intensidad; el <strong>Teri Salmon Glaze</strong>, con glaze teriyaki que añade dulzor sin volverse empalagoso; y el <strong>Funghi Veggie Power</strong>, la opción vegana que no pide disculpas por no tener proteína animal.</p>
+      <p>El delivery llega en una caja negra con "Best Onigiri in Town" en el lateral. Adentro: el pedido, stickers holográficos coleccionables y una toallita húmeda. Parece un detalle menor. No lo es. Es la diferencia entre un local que vende onigiris y una marca que entiende qué significa recibir algo en casa.</p>
+      <p>Jurichi tiene local en <strong>Bonpland 1861, Palermo Hollywood</strong>, y entrega por Rappi, PedidosYa y su propia web con 20% de descuento.</p>
     </div>
-
-    <p style="color: rgba(245,240,230,0.6); font-size: 15px; max-width: 560px; margin-bottom: 0.5rem;">
-      Lo que los diferencia no es solo el producto — es que trataron el onigiri con el mismo respeto con el que un konbini de Tokio trata el onigiri. <strong style="color: var(--white);">Sin shortcuts.</strong>
-    </p>
-
-    <div class="sabores">
-      <div class="sabor">
-        <p class="sabor-name">ASIAN SALMON SESAME</p>
-        <p class="sabor-desc">Salmón asiático con sésamo tostado. El más popular.</p>
-      </div>
-      <div class="sabor">
-        <p class="sabor-name">SPICY TUNA JAPO MAYO</p>
-        <p class="sabor-desc">Atún picante con mayo japonesa. Para los que quieren kick.</p>
-      </div>
-      <div class="sabor">
-        <p class="sabor-name">TERI SALMON GLAZE</p>
-        <p class="sabor-desc">Salmón con glaze teriyaki. Dulce, profundo, adictivo.</p>
-      </div>
-      <div class="sabor">
-        <p class="sabor-name">FUNGHI VEGGIE POWER</p>
-        <p class="sabor-desc">Hongos salteados. La opción vegana que no se disculpa.</p>
-      </div>
+    <div class="nota-details">
+      <div class="nota-detail"><p class="nota-detail-label">DIRECCIÓN</p><p class="nota-detail-value">Bonpland 1861<br/>Palermo Hollywood</p></div>
+      <div class="nota-detail"><p class="nota-detail-label">DELIVERY</p><p class="nota-detail-value">Rappi · PedidosYa<br/>jurichi.com (20% off)</p></div>
+      <div class="nota-detail"><p class="nota-detail-label">RATING</p><p class="nota-detail-value">5.0 PedidosYa<br/>4.9 Rappi</p></div>
+      <div class="nota-detail"><p class="nota-detail-label">HORARIO</p><p class="nota-detail-value">Lun–Jue y Dom<br/>11 a 23hs</p></div>
     </div>
-
-    <a href="https://jurichi.com" class="jurichi-cta" target="_blank" rel="noopener">
-      Ir a jurichi.com <span class="jurichi-cta-arrow">→</span>
-    </a>
+    <div class="sabores-grid">
+      <div class="sabor"><p class="sabor-name">ASIAN SALMON SESAME</p><p class="sabor-desc">Salmón asiático con sésamo tostado. El más pedido.</p></div>
+      <div class="sabor"><p class="sabor-name">SPICY TUNA JAPO MAYO</p><p class="sabor-desc">Atún picante con mayo japonesa. Para los que quieren kick.</p></div>
+      <div class="sabor"><p class="sabor-name">TERI SALMON GLAZE</p><p class="sabor-desc">Salmón con glaze teriyaki. Dulce, profundo, adictivo.</p></div>
+      <div class="sabor"><p class="sabor-name">FUNGHI VEGGIE POWER</p><p class="sabor-desc">Hongos salteados. La opción vegana sin concesiones.</p></div>
+    </div>
+    <a href="https://jurichi.com" class="nota-cta" target="_blank" rel="noopener">Ir a jurichi.com →</a>
   </div>
 </div>
 
@@ -590,13 +269,10 @@
 </footer>
 
 <script>
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) e.target.classList.add('visible');
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('section, .jurichi-section').forEach(el => observer.observe(el));
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.container, .nota-section').forEach(el => obs.observe(el));
 </script>
 </body>
 </html>
